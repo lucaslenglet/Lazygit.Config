@@ -1,8 +1,15 @@
 # Keybindings
-
 keybinding:
   universal:
     nextTab: <tab>
     prevTab: <backtab>
     nextBlock-alt2: <disabled>
     prevBlock-alt2: <disabled>
+
+# Custom commands
+customCommands:
+  - key: 'F'
+    context: 'remotes'
+    command: 'git fetch --prune --all'
+    description: 'Fetch (prune all)'
+    output: 'log'
