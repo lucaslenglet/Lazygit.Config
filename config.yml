@@ -1,0 +1,8 @@
+# Keybindings
+
+keybinding:
+  universal:
+    nextTab: <tab>
+    prevTab: <backtab>
+    nextBlock-alt2: <disabled>
+    prevBlock-alt2: <disabled>
