@@ -1,15 +1,26 @@
 # Keybindings
+
 keybinding:
   universal:
     nextTab: <tab>
     prevTab: <backtab>
     nextBlock-alt2: <disabled>
     prevBlock-alt2: <disabled>
-
 # Custom commands
 customCommands:
   - key: 'F'
     context: 'remotes'
     command: 'git fetch --prune --all'
     description: 'Fetch (prune all)'
+    output: 'log'
+  - key: '<c-a>'
+    context: 'files'
+    description: 'Amend + force push (with lease)'
+    loadingText: 'Amending + pushing...'
+    command: 'pwsh -Command "git commit --amend --no-edit; git push --force-with-lease"'
+    prompts:
+      - type: 'confirm'
+        key: 'Confirm'
+        title: 'Amend + force push with lease?'
+        body: 'This will rewrite history and force-push. Continue?'
     output: 'log'
